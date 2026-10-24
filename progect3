@@ -1,0 +1,14 @@
+f1 = True
+while f1:
+    try:
+        n=int(input("Введите начальное число клеток:"))
+        f1=False
+    except ValueError:
+        print("Ошибка-введено отрицательное число")
+f2 = True
+while f2:
+    try:
+        t=int(input("Время,за которое делится клетка:"))
+        f2=False
+    except ValueError:
+            print("Ошибка-введено отрицательное число")
