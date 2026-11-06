@@ -1,0 +1,37 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "WellPassportContract",
+    "description": "",
+    "type": "object",
+    "required": ["152","","2100","122","46","true","100-80-1800"],
+    "properties": {
+        "152":{
+            "type":"string",
+            "minLength": 1,
+            "description": "100-80-1800"
+        },
+        "field_name":{
+            "type":"string",
+            "minLength": 1,
+            "description": "Приобское"
+        },
+        "depth_m":{
+            "type":"integer",
+            "minimum": 500,
+            "maximum": 4500
+        },
+        "q_liq":{
+            "type":"number",
+            "minimum": 0.0,
+            "maximum": 100.0
+        },
+        "pump":{
+            "type":"object",
+            "required": ["100-80-1800","100"],
+            "properties": {
+                "model":{ "type", "string","minLength": 1},
+                "power_kw":{"type":"number","minimum": 10.0,"maximum": 500.0}
+            }
+        }
+    }
+}
